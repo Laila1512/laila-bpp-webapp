@@ -1,3 +1,7 @@
+.anchorjs-link {
+  display: none !Important;
+}
+
 .input-form {
   background-image: url("brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
 }
