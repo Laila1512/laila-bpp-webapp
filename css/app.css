@@ -1,20 +1,21 @@
 .input-form {
  background-color: #B0B0B0 !important;
  width: 100% !important;
-    .input {
-      width: 100% !important;
-      padding: 12px 20px !important;
-      margin: 8px 0 !important;
-      box-sizing: border-box !important;
-     display: inline-block !important;
-     border: 1px solid #ccc !important;
-     border-radius: 4px !important;
-     box-sizing: border-box !important;
-        :focus {
-          border: 3px solid #555 !important;
-        }
-  }
 }
+
+.input {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    display: inline-block !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+      :focus {
+        border: 3px solid #555 !important;
+      }
+ }
 
 .topnav {
   overflow: hidden;
