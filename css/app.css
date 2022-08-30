@@ -22,6 +22,10 @@
   align-content: center;
 }
 
+.topnav a :first-child {
+  float: right !important; 
+}
+
 .topnav a:hover {
   background-color: #707070;
   color: black;
