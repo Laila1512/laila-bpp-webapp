@@ -7,6 +7,8 @@ for (const x of joblist) {
   option.value = x;
   datalist.appendChild(option);
 };
+  
+  console.log(joblist);
 }
 
 function onSave() {
