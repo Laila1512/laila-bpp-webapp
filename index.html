@@ -1,5 +1,20 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
-<script src="javascript/app.js" type="text/javascript">onLoad();</script>
+<script src="javascript/app.js" type="text/javascript">
+window.onload = function onLoad() {
+const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
+document.getElementById("sampleText").innerHTML = sampleText;
+  
+const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
+let datalist = document.getElementById("jobrole");
+
+for (const x of joblist) {
+  const option = document.createElement('option');
+  option.value = x;
+  datalist.appendChild(option);
+};
+  
+console.log(joblist);
+}</script>
 
 <div class="topnav" id="myTopnav">
   <a href="" style="background-color: unset !important;"><img src="Screenshot 2022-08-29 at 12.55.07.png" alt="EY logo" height="90px" width="90px"></a>
@@ -16,7 +31,7 @@
   <img src="brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="Welcome to the team" style="width: 100%; height: 100%;">
   <div class="about-text" style="position: absolute; bottom: 16px; left: 16px;">
   <h1>About</h1>
-  <span>{{ sampleText }}</span>
+  <span id="sampleText"></span>
   </div>
 </div>
 
@@ -38,5 +53,5 @@
 
 <div id="faqs">
 <h1>FAQs</h2>
-<span>{{ sampleText }}</span>
+<span id="sampleText"></span>
 </div>
