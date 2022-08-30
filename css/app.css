@@ -1,17 +1,17 @@
 .input-form {
  background-color: #B0B0B0 !important;
- width: 100%;
+ width: 100% !important;
     .input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-     display: inline-block;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
+      width: 100% !important;
+      padding: 12px 20px !important;
+      margin: 8px 0 !important;
+      box-sizing: border-box !important;
+     display: inline-block !important;
+     border: 1px solid #ccc !important;
+     border-radius: 4px !important;
+     box-sizing: border-box !important;
         :focus {
-          border: 3px solid #555;
+          border: 3px solid #555 !important;
         }
   }
 }
@@ -19,8 +19,8 @@
 .topnav {
   overflow: hidden;
   background-color: #000;
-  position: fixed;
-  width: 100%:
+  position: fixed !important;
+  width: 100% !important:
 }
 
 .topnav a {
