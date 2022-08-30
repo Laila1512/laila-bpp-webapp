@@ -6,6 +6,7 @@ x = document.getElementsByClassName("sampleText");  // Find the elements
   }
   
 const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
+let datalist = document.getElementById("jobrole");
 
 for (const x of joblist) {
   const option = document.createElement('option');
