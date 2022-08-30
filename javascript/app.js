@@ -10,9 +10,7 @@ let lastName = "";
 let jobRole = "";
 let startDate = "";
 
-if (document.getElementById('jobrole') != null) {
-  document.getElementById('jobrole').innerHTML = options;
-}
+document.getElementById('jobrole').appendChild(options);
 
 function onSave() {
   firstName = document.getElementById("fname").value;
