@@ -22,7 +22,7 @@
   align-content: center;
 }
 
-.topnav a :first-child {
+.topnav a :first {
   float: right !important; 
 }
 
