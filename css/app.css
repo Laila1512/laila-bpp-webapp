@@ -1,13 +1,13 @@
 body {
- margin: 0 !important
+ margin: 0 !important;
+ background-color: #B0B0B0 !important;
 }
 
 .input-form {
- background-color: #B0B0B0 !important;
  width: 100% !important;
 }
 
-.input {
+input {
     width: 100% !important;
     padding: 12px 20px !important;
     margin: 8px 0 !important;
