@@ -6,7 +6,6 @@ x = document.getElementsByClassName("sampleText");  // Find the elements
   }
   
 const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
-let datalist = document.getElementById("jobrole");
 
 for (const x of joblist) {
   const option = document.createElement('option');
@@ -27,5 +26,4 @@ function onSave() {
   lastName = document.getElementById("lname").value;
   jobRole = document.getElementById("jobrole").value;
   startDate = document.getElementById("startDate").value;
-  console.log(firstName, lastName, jobRole, startDate)
 }
