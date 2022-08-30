@@ -1,9 +1,14 @@
-.body {
-  background-color: #B0B0B0 !important;
-}
-
 .input-form {
-  background-image: url("brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
+ background-color: #B0B0B0 !important;
+    .input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+        :focus {
+          border: 3px solid #555;
+        }
+  }
 }
 
 .topnav {
