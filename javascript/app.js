@@ -2,18 +2,11 @@ function onLoad() {
 const joblist =["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
 let datalist = document.getElementById("jobrole");
 
-// for (const x of joblist) {
-//   const option = document.createElement('option');
-//   option.value = x;
-//   datalist.appendChild(option);
-// };
-  var options = '';
-
-for (var i = 0; i < joblist.length; i++) {
-  options += '<option value="' + joblist[i] + '" />';
-}
-
-datalist.innerHTML = options;
+for (const x of joblist) {
+  const option = document.createElement('option');
+  option.value = x;
+  datalist.appendChild(option);
+};
 }
 
 function onSave() {
