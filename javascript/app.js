@@ -1,6 +1,9 @@
 function onLoad() {
 const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
-document.getElementById("sampleText").innerHTML = sampleText;
+x = document.getElementsByClassName("sampleText");  // Find the elements
+  for(var i = 0; i < x.length; i++){
+  x[i].innerText = sampleText;    // Change the content
+  }
   
 const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
 let datalist = document.getElementById("jobrole");
