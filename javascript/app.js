@@ -1,5 +1,7 @@
 function onLoad() {
-const joblist =["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
+const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
+  
+const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
 let datalist = document.getElementById("jobrole");
 
 for (const x of joblist) {
