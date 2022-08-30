@@ -1,6 +1,6 @@
 function onLoad() {
 const joblist =["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
-const datalist = document.getElementById("jobrole");
+let datalist = document.getElementById("jobrole");
 
 for (const x of joblist) {
   const option = document.createElement('option');
