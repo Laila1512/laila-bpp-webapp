@@ -5,7 +5,9 @@ for (var i = 0; i < jobroles.length; i++) {
   options += '<option value="' + jobroles[i] + '" />';
 }
 
-document.getElementById('jobrole').innerHTML = options;
+if (document.getElementById('jobrole') != null) {
+  document.getElementById('jobrole').innerHTML = options;
+}
 
 function onSave() {
   let firstName = document.getElementById("fname").value;
