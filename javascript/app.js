@@ -33,7 +33,7 @@ function onSave() {
     document.getElementById("courseList").innerHTML = "<h1>Suggested Courses:</h1>"
     for (const x of courses) {
       if (x.includes(jobRole)) {
-        document.getElementById("courseList").innerHTML =  document.getElementById("courseList").innerHTML + "<br>" + x;
+        document.getElementById("courseList").innerHTML =  document.getElementById("courseList").innerHTML + x + "<br>";
       }
     }
   }
