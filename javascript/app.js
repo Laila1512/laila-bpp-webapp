@@ -30,6 +30,7 @@ function onSave() {
   if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
     document.getElementById("displayUserDetails").innerHTML = "<h1>Welcome " + firstName + " " + lastName + "</h1>" + 
     "Email: " +  email + "<br>" + "Job role : " + jobRole + " <br>Start date: " + startDate;
+    document.getElementById("courseList").innerHTML = "<h1>Suggested Courses:</h1>"
     for (const x of courses) {
       if (x.includes(jobRole)) {
         document.getElementById("courseList").innerHTML =  document.getElementById("courseList").innerHTML + "<br>" + x;
