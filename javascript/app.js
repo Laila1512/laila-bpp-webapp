@@ -44,8 +44,7 @@ function validateFormData() {
   console.log(arguments)
   if (!!arguments[2] && !arguments[2].match(/^\S+@\S+\.\S+$/)) {
     validData = false;
-     document.getElementById("email").setAttribute('aria-invalid', !isValid);
-    document.getElementById("email").setCustomValidity("Please enter a valid email address");
+    alert("Please enter a valid email address");
   }
   return validData;
 }
