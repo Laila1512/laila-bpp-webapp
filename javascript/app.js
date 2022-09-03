@@ -1,3 +1,5 @@
+const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
+
 function onLoad() {
 const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
 x = document.getElementsByClassName("sampleText");  // Find the elements
@@ -5,10 +7,9 @@ x = document.getElementsByClassName("sampleText");  // Find the elements
   x[i].innerText = sampleText;    // Change the content
   }
   
-const joblist = ["HR", "Marketing", "Tax", "Assurance", "People Advisory Services"];
 let datalist = document.getElementById("jobrole");
 
-for (const x of joblist) {
+for (const x of this.joblist) {
   const option = document.createElement('option');
   option.value = x;
   datalist.appendChild(option);
@@ -40,11 +41,14 @@ function onSave() {
 }
 
 function validateFormData() {
-  let validData = true;
-  console.log(arguments)
+  let validData = true; 
   if (!!arguments[2] && !arguments[2].match(/^\S+@\S+\.\S+$/)) {
     validData = false;
     alert("Please enter a valid email address");
+  }
+  else if (!!arguments[3] && !this.jobList.includes(arguments[3]) {
+     validData = false;
+     alert("Please enter a valid job role");
   }
   return validData;
 }
