@@ -22,10 +22,5 @@ function onSave() {
   let jobRole = document.getElementById("jobrole").value;
   let startDate = document.getElementById("startDate").value;
   
-  validateInputData(firstName, lastName, jobRole, startDate);
+  console.log(firstName, lastName, email, jobRole, startDate);
 }
-
-function validateInputData() {
-  console.log(arguments);
-}
-  
