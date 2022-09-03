@@ -58,11 +58,11 @@ function onSave() {
 
 function validateFormData() {
   let validData = true; 
-  if (!!arguments[0] && !arguments[0].match(/[0-9]/)) {
+  if (!!arguments[0] && arguments[0].match(/[0-9]/)) {
     validData = false;
     alert("Please enter a valid first name");
   }
-  else if (!!arguments[1] && !arguments[1].match(/[0-9]/)) {
+  else if (!!arguments[1] && arguments[1].match(/[0-9]/)) {
     validData = false;
     alert("Please enter a valid last name");
   }
