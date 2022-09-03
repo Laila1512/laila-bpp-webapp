@@ -14,6 +14,8 @@ for (const x of Object.values(joblist)) {
   option.value = x;
   datalist.appendChild(option);
 };
+  
+expandText();
 }
 
 function onSave() {
