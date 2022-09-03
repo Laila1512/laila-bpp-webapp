@@ -19,7 +19,7 @@ function onSave() {
   let firstName = document.getElementById("fname").value;
   let lastName = document.getElementById("lname").value;
   let email = document.getElementById("email").value;
-  let jobRole = document.getElementById("jobrole").value;
+  let jobRole = document.getElementById("jobList").value;
   let startDate = document.getElementById("startdate").value;
   
   console.log(firstName, lastName, email, jobRole, startDate);
