@@ -22,5 +22,12 @@ function onSave() {
   let jobRole = document.getElementById("jobList").value;
   let startDate = document.getElementById("startdate").value;
   
-  console.log(firstName, lastName, email, jobRole, startDate);
+  if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
+    console.log("test");
+  }
+}
+
+function validateFormData() {
+  console.log(arguments);
+  return false;
 }
