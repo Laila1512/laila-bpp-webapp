@@ -42,7 +42,15 @@ function onSave() {
 
 function validateFormData() {
   let validData = true; 
-  if (!!arguments[2] && !arguments[2].match(/^\S+@\S+\.\S+$/)) {
+  if (!!arguments[0] && !arguments[0].match(^[a-zA-Z]*$)) {
+    validData = false;
+    alert("Please enter a valid first name");
+  }
+  else if (!!arguments[1] && !arguments[1].match(^[a-zA-Z]*$)) {
+    validData = false;
+    alert("Please enter a valid last name");
+  }
+  else if (!!arguments[2] && !arguments[2].match(/^\S+@\S+\.\S+$/)) {
     validData = false;
     alert("Please enter a valid email address");
   }
