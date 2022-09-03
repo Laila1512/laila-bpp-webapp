@@ -14,8 +14,6 @@ for (const x of Object.values(joblist)) {
   option.value = x;
   datalist.appendChild(option);
 };
-  
-expandText();
 }
 
 function onSave() {
@@ -70,15 +68,16 @@ function validateFormData() {
 function expandText() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
-
+  console.log('raees')
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
+      console.log('laila');
+      if (content.style.display.includes("block")) {
+        content.style.display = "none !important";
       } else {
-        content.style.display = "block";
+        content.style.display = "block !important";
       }
     });
   }
