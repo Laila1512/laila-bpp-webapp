@@ -46,7 +46,7 @@ function validateFormData() {
     validData = false;
     alert("Please enter a valid email address");
   }
-  else if (!!arguments[3] && !this.jobList.includes(arguments[3]) {
+  else if (!!arguments[3] && !this.jobList.includes(arguments[3])) {
      validData = false;
      alert("Please enter a valid job role");
   }
