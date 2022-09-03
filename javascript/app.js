@@ -40,5 +40,10 @@ function onSave() {
 }
 
 function validateFormData() {
-  return true;
+  let validData = true;
+  console.log(arguments)
+  if (!!arguments[2] && !arguments[2].match(/^\S+@\S+\.\S+$/)) {
+    validData = false;
+  }
+  return validData;
 }
