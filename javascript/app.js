@@ -50,5 +50,9 @@ function validateFormData() {
      validData = false;
      alert("Please enter a valid job role");
   }
+  else if (!!arguments[4] && !arguments[4].match(/^\d{4}-\d{2}-\d{2}$/)) {
+    validData = false;
+    alert("PLease enter a valid start date");
+  }
   return validData;
 }
