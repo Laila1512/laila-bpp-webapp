@@ -46,7 +46,7 @@ function validateFormData() {
     validData = false;
     alert("Please enter a valid first name");
   }
-  else if (!!arguments[1] && !arguments[1].match(^[a-zA-Z]*$)) {
+  else if (!!arguments[1] && !arguments[1].match([0-9])) {
     validData = false;
     alert("Please enter a valid last name");
   }
