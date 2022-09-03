@@ -34,6 +34,7 @@ function onSave() {
       if (x.includes(jobRole)) {
         document.getElementById("courseList").innerHTML =  document.getElementById("courseList").innerHTML + "<br>" + x;
       }
+    }
   }
 }
 
