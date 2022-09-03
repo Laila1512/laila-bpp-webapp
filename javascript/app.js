@@ -21,13 +21,22 @@ function onSave() {
   let email = document.getElementById("email").value;
   let jobRole = document.getElementById("jobList").value;
   let startDate = document.getElementById("startdate").value;
+  const courses = ["People Management - HR", "Human Resource Training - HR",
+        "Sales Strategy - Marketing", "Advertising at EY - Marketing", 
+        "Submitting Financial Statements - Tax", "Accountancy Basics - Tax",
+        "Audit Basics - Assurance", "Risk Management - Assurance",
+        "Diversity & Inclusion - People Advisory Services", "Future Skills - People Advisory Services"];
   
   if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
-    document.getElementById("displayUserDetails").innerHTML = "<h1>Welcome " + firstName + " " + lastName + "</h1>" + "Email: " +  email + "<br>" + "Job role : " + jobRole + " <br>Start date: " + startDate;
+    document.getElementById("displayUserDetails").innerHTML = "<h1>Welcome " + firstName + " " + lastName + "</h1>" + 
+    "Email: " +  email + "<br>" + "Job role : " + jobRole + " <br>Start date: " + startDate;
+    for (const x of courses) {
+      if (x includes jobRole) {
+        document.getElementById("courseList").innerHTML =  document.getElementById("courseList").innerHTML + "<br>" + x;
+      }
   }
 }
 
 function validateFormData() {
-  console.log(arguments);
   return true;
 }
