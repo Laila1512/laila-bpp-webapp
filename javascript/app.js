@@ -29,7 +29,7 @@ function onSave() {
   
   if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
     document.getElementById("displayUserDetails").innerHTML = "<h1>Welcome " + firstName + " " + !!lastName ? lastName : "" + "</h1>" + 
-   !!email ? "Email: " +  email + "<br>": "" + "Job role : " + jobRole + " !!startDate ? <br>Start date: " + startDate : "";
+   !!email ? "Email: " +  email + "<br>": "" + "Job role : " + jobRole + !!startDate ? "<br>Start date: " + startDate : "";
     document.getElementById("courseList").innerHTML = "<h1>Suggested Courses:</h1>"
     for (const x of courses) {
       if (x.includes(jobRole)) {
