@@ -22,7 +22,7 @@
 
 <div id="onboarding" style="margin-left: 33% !important;">
   <h1>Onboarding</h2>
-<form class="input-form" method="post" onsubmit="onSave()">
+<form class="input-form" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" onsubmit="onSave()">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" placeholder="Please enter first name" required><br>
   <label for="lname">Last name:</label><br>
