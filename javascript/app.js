@@ -13,18 +13,19 @@ for (const x of joblist) {
   option.value = x;
   datalist.appendChild(option);
 };
-  
-console.log(joblist);
 }
 
 function onSave() {
-  let firstName = "";
-  let lastName = "";
-  let jobRole = "";
-  let startDate = "";
+  let firstName = document.getElementById("fname").value;
+  let lastName = document.getElementById("lname").value;
+  let email = document.getElementById("email").value;
+  let jobRole = document.getElementById("jobrole").value;
+  let startDate = document.getElementById("startDate").value;
   
-  firstName = document.getElementById("fname").value;
-  lastName = document.getElementById("lname").value;
-  jobRole = document.getElementById("jobrole").value;
-  startDate = document.getElementById("startDate").value;
+  validateInputData(firstName, lastName, jobRole, startDate);
 }
+
+function validateInputData() {
+  console.log(arguments);
+}
+  
