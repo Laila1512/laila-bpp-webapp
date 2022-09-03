@@ -23,7 +23,7 @@ function onSave() {
   let startDate = document.getElementById("startdate").value;
   
   if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
-    document.getElementById("displayUserDetails").innerHTML = "Welcome " + firstName + " " + lastName + "<br>" + "Email: " +  email + "<br>" + jobRole + startDate;
+    document.getElementById("displayUserDetails").innerHTML = "<h1>Welcome " + firstName + " " + lastName + "</h1><br>" + "Email: " +  email + "<br>" + "Job role : " + jobRole + " start date: " + startDate;
   }
 }
 
