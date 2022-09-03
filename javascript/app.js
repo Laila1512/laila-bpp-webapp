@@ -64,21 +64,3 @@ function validateFormData() {
   }
   return validData;
 }
-
-function expandText() {
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  console.log('raees')
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      console.log('laila');
-      if (content.style.display.includes("block")) {
-        content.style.display = "none !important";
-      } else {
-        content.style.display = "block !important";
-      }
-    });
-  }
-}
