@@ -1,3 +1,5 @@
+var displayUserDetails: boolean = false;
+
 function onLoad() {
 const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
 x = document.getElementsByClassName("sampleText");  // Find the elements
@@ -23,11 +25,11 @@ function onSave() {
   let startDate = document.getElementById("startdate").value;
   
   if (validateFormData(firstName, lastName, email, jobRole, startDate)) {
-    console.log("test");
+    displayUserDetails = true;
   }
 }
 
 function validateFormData() {
   console.log(arguments);
-  return false;
+  return true;
 }
