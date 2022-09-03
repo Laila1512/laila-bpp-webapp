@@ -9,7 +9,7 @@ x = document.getElementsByClassName("sampleText");  // Find the elements
   
 let datalist = document.getElementById("jobrole");
 
-for (const x of this.joblist) {
+for (const x of Object.keys(joblist)) {
   const option = document.createElement('option');
   option.value = x;
   datalist.appendChild(option);
@@ -46,7 +46,7 @@ function validateFormData() {
     validData = false;
     alert("Please enter a valid email address");
   }
-  else if (!!arguments[3] && !this.jobList.includes(arguments[3])) {
+  else if (!!arguments[3] && !Object.keys(joblist).includes(arguments[3])) {
      validData = false;
      alert("Please enter a valid job role");
   }
